@@ -1,0 +1,56 @@
+name: edu_manager_app
+description: "نظام إدارة التعليم - Education Management System"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0-0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ===== State Management =====
+  provider: ^6.1.2          # إدارة الحالة
+  get_it: ^7.6.7            # حقن التبعيات
+
+  # ===== Local Storage =====
+  shared_preferences: ^2.2.2  # تخزين بيانات المستخدم + Device ID
+  hive: ^2.2.3                # تخزين مؤقت سريع
+  hive_flutter: ^1.1.0        # دعم Hive لـ Flutter
+  sqflite: ^2.3.2             # SQLite للإحصائيات
+  path_provider: ^2.1.2       # مسارات الملفات
+  path: ^1.9.0                # دمج المسارات
+
+  # ===== Networking =====
+  http: ^1.2.0                # طلبات HTTP
+  web_socket_channel: ^2.4.0  # WebSocket للاتصال الفوري
+
+  # ===== WiFi/Hotspot (Android Only) =====
+  wifi_iot: ^0.3.19+1         # التحكم بالـ WiFi/Hotspot
+
+  # ===== Utilities =====
+  intl: ^0.19.0               # التدويل والتنسيق
+  uuid: ^4.3.3                # معرفات فريدة
+  encrypt: ^5.0.3             # التشفير
+  
+  # ===== UI Components =====
+  cupertino_icons: ^1.0.8
+  fl_chart: ^0.68.0           # الرسوم البيانية
+  shimmer: ^3.0.0             # تأثيرات التحميل
+  cached_network_image: ^3.3.1  # تخزين الصور
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  hive_generator: ^2.0.1      # مولد Hive
+  build_runner: ^2.4.8        # أدوات البناء
+  mockito: ^5.4.4             # للاختبارات
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
